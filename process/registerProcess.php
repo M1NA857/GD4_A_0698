@@ -11,6 +11,18 @@
         $name = $_POST['name'];
         $phonenum = $_POST['phonenum'];
         $membership = $_POST['membership'];
+
+        $query = mysqli_query($con, "select * from users where phonenum = '$phonenum'");
+        $users = mysqli_fetch_array($query);
+        if(mysqli_num_rows($query) > 0){
+            echo
+                '<script>
+                alert("Nomor telepon harus unik !");
+                window.location = "../page/registerPage.php"
+                </script>';
+            die();
+        }
+
         // Melakukan insert ke databse dengan query dibawah ini
         $query = mysqli_query($con,
          "INSERT INTO users(email, password, name, phonenum, membership) 
