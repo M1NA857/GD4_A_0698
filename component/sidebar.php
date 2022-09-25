@@ -67,9 +67,17 @@ color:white;
 <a href="./dashboardPage.php" style="font-weight:600" 
 >Dashboard</a>
 </div>
+<div class="content-menu">
+<i class="fa fa-user"></i>
+<a href="./profile.php" style="font-weight:600">Profile</a>
+</div>
 <div class="content-menu " >
 <i class="fa fa-film"></i>
 <a href="./listMoviesPage.php" style="font-weight:600">List Movie</a>
+</div>
+<div class="content-menu " >
+<i class="fa fa-desktop"></i>
+<a href="./listSeriesPage.php" style="font-weight:600">List Series</a>
 </div>
 <div class="content-menu " >
 <i class="fa fa-sign-out"></i>
